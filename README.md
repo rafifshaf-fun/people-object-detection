@@ -24,7 +24,7 @@ Input Frame → [Primary Detector] → Car ROI → [Plate Detector] → Plate Cr
 - Face Detection Dataset (Kaggle)
 
 ## 🚀 Run It Yourself
-[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](YOUR_KAGGLE_NOTEBOOK_URL)
+[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/romeoshaffun/people-and-car-object-detection)
 
 ## 🛠️ Tech Stack
 - YOLOv8 (Ultralytics)

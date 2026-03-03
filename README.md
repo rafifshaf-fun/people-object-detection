@@ -10,11 +10,11 @@ then zooms in to identify license plates and faces.
 Input Frame → [Primary Detector] → Car ROI → [Plate Detector] → Plate Crop
                                 → Person ROI → [Face Detector] → Face Crop
 
-## 📊 Model Performance
+## 📊 Model Performance (2 epochs)
 | Model | mAP50 | mAP50-95 |
 |---|---|---|
-| Primary (Car+Person) | X.XXX | X.XXX |
-| License Plate | X.XXX | X.XXX |
+| Primary (Car+Person) | 0.762 | 0.421 |
+| License Plate | 0.606 | 0.375 |
 | Face Detector | 0.812 | 0.513 |
 
 ## 🗂️ Datasets

@@ -4,7 +4,9 @@ A multi-stage computer vision pipeline that detects cars and people,
 then zooms in to identify license plates and faces.
 
 ## 🔍 Demo
-![Sample Output](assets/Sample-output-car.png)
+![Sample Output](samples/Sample-output-car.png) 
+
+![Sample Face](samples/Sample-output-face.png)
 
 ## 🏗️ Architecture
 Input Frame → [Primary Detector] → Car ROI → [Plate Detector] → Plate Crop

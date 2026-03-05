@@ -1,0 +1,5 @@
+path: /kaggle/input/datasets/fareselmenshawii/face-detection-dataset
+train: images/train
+val: images/val
+nc: 1
+names: ['face']

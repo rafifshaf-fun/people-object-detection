@@ -1,0 +1,5 @@
+path: /kaggle/working/plate_yolo
+train: images/train
+val: images/val
+nc: 1
+names: ['license_plate']

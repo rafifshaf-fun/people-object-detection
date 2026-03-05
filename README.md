@@ -15,9 +15,9 @@ Input Frame → [Primary Detector] → Car ROI → [Plate Detector] → Plate Cr
 ## 📊 Model Performance (2 epochs)
 | Model | mAP50 | mAP50-95 |
 |---|---|---|
-| Primary (Car+Person) | 0.762 | 0.421 |
-| License Plate | 0.606 | 0.375 |
-| Face Detector | 0.812 | 0.513 |
+| Primary (Car+Person) | 0.807 | 0.479 |
+| License Plate | 0.83 | 0.539 |
+| Face Detector | 0.864 | 0.57 |
 
 ## 🗂️ Datasets
 - Car Object Detection (Kaggle)

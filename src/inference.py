@@ -6,12 +6,13 @@ import random
 from ultralytics import YOLO
 
 # ── Config ────────────────────────────────────────────────────────────────────
-WORK         = "/kaggle/working"
-PRIMARY_PT   = f"{WORK}/runs/primary/weights/best.pt"
-PLATE_PT     = f"{WORK}/runs/plate/weights/best.pt"
-FACE_PT      = f"{WORK}/runs/face/weights/best.pt"
-OUTPUT_DIR   = WORK
-CROP_SIZE    = 256  # face thumbnail size (px)
+BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PRIMARY_PT = os.path.join(BASE_DIR, "weights", "primary.pt")
+PLATE_PT   = os.path.join(BASE_DIR, "weights", "plate.pt")
+FACE_PT    = os.path.join(BASE_DIR, "weights", "face.pt")
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
+CROP_SIZE  = 256
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ── Load Models ───────────────────────────────────────────────────────────────
 primary   = YOLO(PRIMARY_PT)
@@ -85,3 +86,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_pipeline(args.image, save_path=args.output, crop_size=args.crop_size)
+
